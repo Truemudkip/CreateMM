@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "create_mm",
+	"version": "${version}",
+	"name": "CreateMM",
+	"description": "Metallurgy addon for Create",
+	"authors": [
+		"Truemudkip"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/create_mm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.truemudkip.create_mm.CreateMM"
+		],
+		"client": [
+			"com.truemudkip.create_mm.CreateMMClient"
+		],
+		"fabric-datagen": [
+			"com.truemudkip.create_mm.CreateMMDataGenerator"
+		]
+	},
+	"mixins": [
+		"create_mm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
